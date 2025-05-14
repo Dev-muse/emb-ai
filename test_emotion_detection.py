@@ -4,26 +4,27 @@ import unittest
 
 class TestSentimentAnalyzer(unittest.TestCase):
     def test_sentiment_analyzer(self):
-    # Test case for positive sentiment
-    result_1 = emotion_detector('I am glad this happened')
-    self.assertEqual(result_1['dominant_emotion'], 'joy')
-    
-    # Test case for negative sentiment
-    result_2 = emotion_detector('I am really mad about this')
-    self.assertEqual(result_2['dominant_emotion'], 'anger')
-    
-    # Test case for disguist sentiment
-    result_3 = emotion_detector('I feel disgusted just hearing about this')
-    self.assertEqual(result_3['dominant_emotion'], 'disgust')
+        # Test case for positive sentiment
+        result_1 = emotion_detector('I am glad this happened')
+        self.assertEqual(result_1['dominant_emotion'], 'joy')
+        
+        # Test case for negative sentiment
+        result_2 = emotion_detector('I am really mad about this')
+        self.assertEqual(result_2['dominant_emotion'], 'anger')
+        
+        # Test case for disguist sentiment
+        result_3 = emotion_detector('I feel disgusted just hearing about this')
+        self.assertEqual(result_3['dominant_emotion'], 'disgust')
 
-    # Test case for sad sentiment
-    result_4 = emotion_detector('I am so sad about this')
-    self.assertEqual(result_4['dominant_emotion'], 'sadness')
-    
-    # Test case for fear sentiment
-    result_5 = emotion_detector('I am really afraid that this will happen')
-    self.assertEqual(result_5['dominant_emotion'], 'fear')
+        # Test case for sad sentiment
+        result_4 = emotion_detector('I am so sad about this')
+        self.assertEqual(result_4['dominant_emotion'], 'sadness')
+        
+        # Test case for fear sentiment
+        result_5 = emotion_detector('I am really afraid that this will happen')
+        self.assertEqual(result_5['dominant_emotion'], 'fear')
 
+   
 
 unittest.main()
 
